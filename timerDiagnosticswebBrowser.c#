@@ -1,0 +1,16 @@
+ private void Form1_Load(object sender, EventArgs e)
+        {
+            timer1.Start();
+        }
+        //System.Diagnostics.Process.Start("shutdown", "/s /t 0")
+        //System.Diagnostics.Process.Start("https://google.com");
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            DateTime dt = DateTime.Now;
+            label1.Text = dt.ToString("hh:mm:ss");
+        }
+		
+        private void richTextBox1_TextChanged(object sender, EventArgs e)
+        {
+            //webBrowser1.DocumentText = richTextBox1.Text;
+        }
